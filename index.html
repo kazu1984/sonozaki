@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="robots" content="noindex" />
+
+  <!-- meta情報 -->
+  <title>株式会社 園崎組</title>
+  <meta name="description" content="私達のモットーは、 「社会基盤から世界をより良くする」こと。
+  そのために最前線で国家規模のプロフェクトに参画することもあれば、 世界各国の技術者、研究者と共に次世代の建設機材の研究開発事業も 同時に行うことで、業界の進化の促進を担っています。" />
+  <meta name="keywords" content="" />
+
+  <!-- OGP -->
+  <meta property="og:title" content="株式会社 園崎組">
+  <meta property="og:site_name" content="株式会社 園崎組">
+  <meta property="og:description" content="私達のモットーは、 「社会基盤から世界をより良くする」こと。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.kazuto-code.com/works/sonozaki/">
+  <meta property="og:image" content="https://www.kazuto-code.com/works/sonozaki/dist/images/common/sonozaki-ogp.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@oioi23242712">
+
+
+  <!-- タッチアイコン -->
+  <link rel="apple-touch-icon" sizes="192x192" href="dist/images/common/icon.png">
+  <link rel="shortcut icon" sizes="192x192" href="dist/images/common/icon.png">
+
+  <!-- ファビコン -->
+  <link rel="”icon”" href="dist/images/common/icon.png" />
+
+  <!-- フォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Noto+Sans+JP:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+  <!-- aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+  <!-- css -->
+  <link rel="stylesheet" href="./dist/css/styles.css">
+
+  <!-- JavaScript -->
+  <script defer src="./dist/js/common.js"></script>
+
+</head>
+
+<body>
+
+  <div id="splash" class="p-splash">
+    <div id="splash__text" class="p-splash__text"></div>
+  </div>
+  
+  <main>
+
+    <div class="p-home-top">
+      <header class="p-home-top__headeer p-header js-header">
+        <div class="p-header__inner">
+          <a href="#" class="p-header__logo-link">
+            <div class="p-header__logo">
+            </div>
+          </a>
+          <nav class="p-header__nav">
+            <ul class="p-header__menu">
+              <li class="p-header__item">
+                <a href="#" class="p-header__link c-menu-link" data-en="top">トップ</a>
+              </li>
+              <li class="p-header__item">
+                <a href="#home-service" class="p-header__link c-menu-link" data-en="services">事業内容</a>
+              </li>
+              <li class="p-header__item">
+                <a href="#home-about" class="p-header__link c-menu-link" data-en="about">園崎組について</a>
+              </li>
+              <li class="p-header__item">
+                <a href="#home-work" class="p-header__link c-menu-link" data-en="works">園崎組の実績</a>
+              </li>
+              <li class="p-header__item">
+                <a href="#home-recruit" class="p-header__link c-menu-link" data-en="recruit">採用情報</a>
+              </li>
+              <li class="p-header__item">
+                <a href="#home-contact" class="p-header__link c-menu-link" data-en="contact">お問い合わせ</a>
+              </li>
+            </ul>
+          </nav>
+          <button type="button" class="p-header__hamburger c-hamburger js-hamburger" aria-controls="p-drawer"
+            aria-expanded="false">
+            <span class="c-hamburger__line">
+              <span class="u-visually-hidden">
+                メニューを開閉する
+              </span>
+            </span>
+          </button>
+        </div>
+        <div id="p-drawer" class="p-header__drawer p-drawer js-drawer" aria-hidden="true" data-click="false">
+          <ul class="p-drawer__items">
+            <li class="p-drawer__item">
+              <a href="#" class="p-drawer__link c-menu-link is-active" data-en="top">トップ</a>
+            </li>
+            <li class="p-drawer__item">
+              <a href="#home-service" class="p-drawer__link c-menu-link" data-en="services">事業内容</a>
+            </li>
+            <li class="p-drawer__item">
+              <a href="#home-about" class="p-drawer__link c-menu-link" data-en="about">園崎組について</a>
+            </li>
+            <li class="p-drawer__item">
+              <a href="#home-work" class="p-drawer__link c-menu-link" data-en="works">園崎組の実績</a>
+            </li>
+            <li class="p-drawer__item">
+              <a href="#home-recruit" class="p-drawer__link c-menu-link" data-en="recruit">採用情報</a>
+            </li>
+            <li class="p-drawer__item">
+              <a href="#home-contact" class="p-drawer__link c-menu-link" data-en="contact">お問い合わせ</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div class="p-home-top__mv p-mv">
+        <div class="p-mv__imgs">
+          <div class="p-mv__swiper js-mv__swiper swiper">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <picture class="p-mv__img">
+                  <source srcset="./dist/images/common/top-image-1.png" media="(min-width: 768px)">
+                  <img src="./dist/images/common/top-image-1-sp.png" alt="">
+                </picture>
+              </li>
+              <!-- <li class="swiper-slide">
+                <picture class="p-mv__img">
+                  <source srcset="./dist/images/common/top-image-2.png" media="(min-width: 768px)">
+                  <img src="./dist/images/common/top-image-2-sp.png" alt="">
+                </picture>
+              </li>
+              <li class="swiper-slide">
+                <picture class="p-mv__img">
+                  <source srcset="./dist/images/common/top-image-3.png" media="(min-width: 768px)">
+                  <img src="./dist/images/common/top-image-3-sp.png" alt="">
+                </picture>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="p-mv__inner l-inner">
+          <h1 class="p-mv__title">challenge<br>from<br class="u-mobile"> the bottom</h1>
+          <p class="p-mv__sub-title">社会の基礎を支え</p><br>
+          <p class="p-mv__sub-title">基礎から世界を変革する会社</p>
+          <a href="#" class="p-mv__news p-news">
+            <div class="p-news__head-wrap">
+              <span class="p-news__head">news</span>
+            </div>
+            <div class="p-news__body">
+              <time class="p-news__date" datetime="2021-06-12">2021.06.12</time>
+              <span class="p-news__tag">お知らせ</span>
+              <h2 class="p-news__title">新サイトを公開しました。</h2>
+            </div>
+            <span class="p-news__arrow c-button__arrow"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="header-scroll"></div>
+
+    <section id="home-service" class="p-home-service l-home-service" data-aos="fade-up">
+      <div class="p-home-service__bg"></div>
+      <div class="l-inner p-home-service__inner">
+        <div class="p-home-service__img-wrapper">
+          <picture class="p-home-service__img">
+            <source srcset="./dist/images/common/image-services.jpg" media="(min-width: 768px)">
+            <img src="./dist/images/common/image-service-sp.jpg" alt="">
+          </picture>
+        </div>
+        <div class="p-home-service__body">
+          <div class="p-home-service__title">
+            <div class="c-section-title">
+              <p class="c-section-title__en">services</p>
+              <span class="c-section-title__border"></span>
+              <h2 class="c-section-title__ja">事業内容</h2>
+            </div>
+          </div>
+          <div class="p-home-service__copy c-section-copy">
+            <p class="c-section-copy__main">人々の生活基盤を<br>世界最高峰の技術で支える</p>
+            <p class="c-section-copy__sub">私達のモットーは、 「社会基盤から世界をより良くする」こと。<br
+                class="u-desktop">そのために最前線で国家規模のプロフェクトに参画することもあれば、世界各国の技術者、研究者と共に次世代の建設機材の研究開発事業も同時に行うことで、業界の進化の促進を担っています。
+            </p>
+          </div>
+          <div class="p-home-service__button">
+            <a href="#" class="c-button">事業内容を更に知る<span class="c-button__arrow"></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="home-about" class="p-home-about l-home-about" data-aos="fade-up">
+      <div class="l-inner">
+        <div class="p-home-about__inner">
+          <figure class="p-home-about__img">
+            <img src="./dist/images/common/image-about-sp.jpg" alt="">
+          </figure>
+          <div class="p-home-about__title">
+            <div class="c-section-title">
+              <p class="c-section-title__en">about</p>
+              <span class="c-section-title__border"></span>
+              <h2 class="c-section-title__ja">園崎組について</h2>
+            </div>
+          </div>
+          <div class="p-home-about__copy c-section-copy">
+            <p class="c-section-copy__sub">
+              園崎組は埼玉県秩父市にて、主に土木工事にて社会基盤を支える企業になります。<br>また、自社工場において施工に必要とされる各種資材も生産しており、各業者に提供することで、社会基盤の構築・整備に貢献しております。
+            </p>
+          </div>
+          <div class="p-home-about__button">
+            <a href="#" class="c-button">詳しく見る<span class="c-button__arrow"></span></a>
+          </div>
+          <figure class="p-home-about__img-2">
+            <img src="./dist/images/common/image-about.jpg" alt="">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="home-work" class="p-home-work l-home-work" data-aos="fade-up">
+      <div class="l-inner">
+        <div class="p-home-work__title">
+          <div class="c-section-title">
+            <p class="c-section-title__en">works</p>
+            <span class="c-section-title__border"></span>
+            <h2 class="c-section-title__ja">園崎組の実績</h2>
+          </div>
+        </div>
+        <div class="p-home-work__copy c-section-copy">
+          <p class="c-section-copy__main">社会を基礎から、<span>変革してきたプロジェクト</span></p>
+          <p class="c-section-copy__sub">創業以來より培われた確かな技術力で社会を変革する様々な案件を手掛けてきました。<br class="u-desktop">その一部を紹介させていただきます。
+          </p>
+        </div>
+        <ul class="p-home-work__cards p-cards">
+          <li class="p-cards__item p-card">
+            <figure class="p-card__img">
+              <picture>
+                <source srcset="./dist/images/common/image-works-1.jpg" media="(min-width: 768px)">
+                <img src="./dist/images/common/image-works-sp-01.jpg" alt="">
+              </picture>
+              <span class="p-card__label">01</span>
+            </figure>
+            <div class="p-card__body">
+              <h3 class="p-card__title">施工実績</h3>
+              <p class="p-card__text">東南アジア某国での国家規模のプロジェクトに参画した際の園崎組のプロジェクトストーリーを記載しています。</p>
+            </div>
+          </li>
+          <li class="p-cards__item p-card">
+            <figure class="p-card__img">
+              <picture>
+                <source srcset="./dist/images/common/image-works-2.jpg" media="(min-width: 768px)">
+                <img src="./dist/images/common/image-works-sp-02.jpg" alt="">
+              </picture>
+              <span class="p-card__label">02</span>
+            </figure>
+            <div class="p-card__body">
+              <h3 class="p-card__title">商品納入実績</h3>
+              <p class="p-card__text">土木・建設資材のプロフェッショナルとして、現場で必要となる各種資材を提供しています。</p>
+            </div>
+          </li>
+        </ul>
+        <div class="p-home-work__button">
+          <a href="#" class="c-button">実績一覧を見る<span class="c-button__arrow"></span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="home-recruit" class="p-home-recruit l-home-recruit" data-aos="fade-up">
+      <div class="l-inner">
+        <div class="p-home-recruit__title">
+          <div class="c-section-title">
+            <p class="c-section-title__en">recruit</p>
+            <span class="c-section-title__border"></span>
+            <h2 class="c-section-title__ja">採用情報</h2>
+          </div>
+        </div>
+      </div>
+      <div class="p-home-recruit__inner">
+        <ul class="p-home-recruit__img-box p-img-box">
+          <li class="p-img-box__item">
+            <div class="p-img-box__inner">
+              <figure class="p-img-box__img">
+                <img src="./dist/images/common/image-recruit-1.jpg" alt="">
+              </figure>
+              <a href="#" class="p-img-box__button c-button c-button--recruit">園崎組を知る<span
+                  class="c-button__arrow"></span></a>
+            </div>
+          </li>
+          <li class="p-img-box__item">
+            <div class="p-img-box__inner">
+              <figure class="p-img-box__img">
+                <img src="./dist/images/common/image-recruit-2.jpg" alt="">
+              </figure>
+              <a href="#" class="p-img-box__button c-button c-button--recruit">園崎組の一日<span
+                  class="c-button__arrow"></span></a>
+            </div>
+          </li>
+          <li class="p-img-box__item">
+            <div class="p-img-box__inner">
+              <figure class="p-img-box__img">
+                <img src="./dist/images/common/image-recruit-3.jpg" alt="">
+              </figure>
+              <a href="#" class="p-img-box__button c-button c-button--recruit">求める人物像<span
+                  class="c-button__arrow"></span></a>
+            </div>
+          </li>
+        </ul>
+        <div class="p-home-recruit__button">
+          <a href="#" class="c-button">エントリーはこちら<span class="c-button__arrow"></span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="home-contact" class="p-home-contact l-home-contact">
+      <div class="l-inner">
+        <div class="p-home-contact__title">
+          <div class="c-section-title">
+            <p class="c-section-title__en">contact</p>
+            <span class="c-section-title__border c-section-title__border--white"></span>
+            <h2 class="c-section-title__ja c-section-title__ja--white">お問い合わせ</h2>
+          </div>
+        </div>
+        <p class="p-home-contact__text">園崎組では一般的な施工から特注部品、機械の開発・製造まで一貫して対応しております。<br>お気軽にご連絡ください。</p>
+        <div class="p-home-contact__button">
+          <a href="#" class="c-button c-button--large c-button--red">
+            <img src="./dist/images/common/Backhoe.svg" alt="">
+            施工のご相談
+            <span class="c-button__arrow"></span>
+          </a>
+          <a href="#" class="c-button c-button--large c-button--black">
+            <img src="./dist/images/common/Factory.svg" alt="">
+            特注制作のご相談
+            <span class="c-button__arrow"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="p-footer l-footer">
+    <div class="p-footer__top">
+      <div class="p-footer__inner l-inner">
+        <div class="p-footer__company">
+          <figure class="p-footer__logo">
+            <a href="#">
+              <img src="./dist/images/common/logo-w-2.svg" alt="">
+            </a>
+          </figure>
+          <ul class="p-footer__company-list">
+            <li class="p-footer__company-item">株式会社 園崎組</li>
+            <li class="p-footer__company-item"><span class="u-desktop">〒000-000</span></li>
+            <li class="p-footer__company-item"><span class="u-mobile">〒000-000</span>埼玉県秩父市×××××××××××</li>
+            <li class="p-footer__company-item">TEL 0494-00-0000</li>
+            <li class="p-footer__company-item">FAX 000-0000-0000</li>
+          </ul>
+        </div>
+        <ul class="p-footer__nav">
+          <li class="p-footer__nav-item"><a href="#">トップ</a></li>
+          <li class="p-footer__nav-item"><a href="#home-service">事業内容</a></li>
+          <li class="p-footer__nav-item"><a href="#home-about">園崎組について</a></li>
+          <li class="p-footer__nav-item"><a href="#home-work">園崎組の実績</a></li>
+          <li class="p-footer__nav-item"><a href="#home-recruit">採用</a></li>
+          <li class="p-footer__nav-item"><a href="#home-contact">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="p-footer__bottom">
+      <div class="l-inner">
+        <p class="p-footer__copyright">Copyright &copy; SONOZAKI CO.LTD All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- aos -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- progressbar -->
+  <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+</body>
+
+</html>

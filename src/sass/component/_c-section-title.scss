@@ -1,0 +1,46 @@
+@use "setting" as *;
+
+.c-section-title {
+  display: inline-flex;
+  align-items: flex-end;
+}
+
+.c-section-title__en {
+  font-family: $ff-second;
+  font-size: rem(32);
+  font-weight: $fw-second-bold;
+  line-height: 0.8;
+  text-transform: uppercase;
+  @include mq("md") {
+    font-size: rem(48);
+  }
+}
+
+.c-section-title__ja {
+  color: $color-font-third;
+  font-size: rem(20);
+  font-weight: $fw-main-medium;
+  line-height: 1;
+  margin-left: rem(8);
+  @include mq("md") {
+    font-size: rem(24);
+  }
+}
+
+.c-section-title__ja--white {
+  color: $color-font-second;
+}
+
+.c-section-title__border {
+  border-top: 1px solid $color-border-blue;
+  width: rem(23);
+  transform: translateY(-11px) rotate(-50deg);
+  margin-left: rem(8);
+  @include mq("md") {
+    width: rem(30);
+  }
+}
+
+.c-section-title__border--white {
+  border-top: 1px solid $color-font-second;
+}

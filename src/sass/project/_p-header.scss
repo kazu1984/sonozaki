@@ -1,0 +1,150 @@
+@use "setting" as *;
+
+.p-header {
+  position: relative;
+  background-image: linear-gradient(to right, #4b6cb7, #182848);
+  padding-top: rem(16);
+  padding-bottom: rem(16);
+  z-index: map-get($layer, "header");
+  @include mq("md") {
+    padding-top: rem(21);
+    padding-bottom: rem(21);
+  }
+}
+
+.p-header__inner {
+  width: 100%;
+  padding-right: $padding-sp;
+  padding-left: $padding-sp;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  @include mq("md") {
+    padding-right: rem(39);
+    padding-left: rem(39);
+  }
+}
+
+.p-header__logo-link:hover {
+  opacity: .7;
+}
+
+.p-header__logo {
+  z-index: map-get($layer, "header-menu");
+  background-image: url("../images/common/logo-w-1-sp.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: rem(120);
+  height: rem(26);
+  @include mq("md") {
+    background-image: url("../images/common/logo-w.svg");
+    width: rem(136);
+    height: rem(29);
+  }
+}
+
+.p-header__nav {
+  display: none;
+  @include mq("md") {
+    display: block;
+    margin-left: rem(24);
+  }
+}
+
+.p-header__menu {
+  display: flex;
+  align-items: center;
+}
+
+.p-header__item {
+  position: relative;
+  color: $color-font-second;
+  line-height: 1;
+}
+
+.p-header__item + .p-header__item {
+  margin-left: rem(37);
+}
+
+.p-header__item + .p-header__item::before {
+  content: "";
+  position: absolute;
+  border-left: 1px solid white;
+  height: rem(34);
+  left: rem(-18);
+  transform: rotate(39deg);
+}
+
+.p-header__hamburger {
+  margin-left: auto;
+  z-index: map-get($layer, "header-menu");
+  @include mq("md") {
+    display: none;
+  }
+}
+
+
+
+/* -------------------------------------------------------
+
+MVより下に来たらヘッダーが出現
+
+------------------------------------------------------- */
+
+// ヘッダーの文字、背景色の変更
+.js-header.is-black {
+  background-image: none;
+  background-color: $color-bg-main;
+}
+
+.js-header.is-black .p-header__item {
+  color: $color-font-main;
+}
+
+.js-header.is-black .p-header__item + .p-header__item::before {
+  border-left: 1px solid $color-font-main;
+}
+
+.js-header.is-black .p-header__logo {
+  background-image: url("../images/common/logo-b-sp.svg");
+  @include mq("md") {
+    background-image: url("../images/common/logo-b.svg");
+  }
+}
+
+// 上に上がる動き
+.js-header.UpMove {
+  position: fixed;
+  width: 100%;
+  animation: UpAnime 0.5s forwards;
+}
+
+@keyframes UpAnime {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}
+
+// 下に下がる動き
+.js-header.DownMove {
+  position: fixed;
+  width: 100%;
+  animation: DownAnime 0.5s forwards;
+}
+
+@keyframes DownAnime {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

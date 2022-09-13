@@ -1,0 +1,22 @@
+@use "setting" as *;
+
+.c-section-copy__main {
+  font-size: rem(24);
+  @include mq("md") {
+    font-size: rem(32);
+  }
+  span {
+    display: inline-block;
+  }
+}
+
+.c-section-copy__sub {
+  line-height: 2;
+  font-size: rem(14);
+  margin-top: rem(17);
+  @include mq("md") {
+    font-size: rem(16);
+    letter-spacing: 0.02em;
+    margin-top: rem(25);
+  }
+}

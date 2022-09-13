@@ -1,0 +1,66 @@
+@use "setting" as *;
+
+.p-card {
+  display: flex;
+  flex-direction: column;
+  @include mq("md") {
+    background-color: $color-card-background;
+  };
+}
+
+.p-card__label {
+  position: absolute;
+  display: block;
+  font-size: rem(20);
+  color: $color-font-second;
+  background-color: $color-card-label;
+  padding: rem(7) rem(20);
+  left: 0;
+  bottom: 0;
+  @include mq("md") {
+    font-size: rem(24);
+    padding: rem(11) rem(15);
+    top: rem(-15);
+    left: rem(-16);
+    bottom: auto;
+  }
+}
+
+.p-card__img {
+  position: relative;
+  aspect-ratio: 375 / 160;
+  @include mq("md") {
+    aspect-ratio: 472 / 240;
+  }
+  img {
+    height: 100%;
+  }
+}
+
+.p-card__body {
+  flex-grow: 1;
+  padding: rem(16) rem(21) rem(30) rem(20);
+  @include mq("md") {
+    padding: rem(21) rem(20) rem(30) rem(24);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.p-card__title {
+  color: $color-card-title;
+  font-size: rem(20);
+  font-weight: $fw-main-medium;
+  @include mq("md") {
+    font-size: rem(24);
+  }
+}
+
+.p-card__text {
+  font-size: rem(14);
+  margin-top: rem(12);
+  line-height: 2;
+  @include mq("md") {
+    font-size: rem(16);
+    margin-top: rem(15);
+  }
+}

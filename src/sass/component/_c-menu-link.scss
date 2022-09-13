@@ -1,0 +1,25 @@
+@use "setting" as *;
+
+.c-menu-link {
+  position: relative;
+  display: block;
+}
+
+.c-menu-link:hover {
+  opacity: .7;
+}
+
+.c-menu-link::after {
+  position: absolute;
+  content:  attr(data-en);
+  font-size: rem(14);
+  font-family: $ff-second;
+  top: rem(25);
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  @include mq("md") {
+    top: rem(22);
+    font-size: rem(10);
+  }
+}

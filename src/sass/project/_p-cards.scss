@@ -1,0 +1,10 @@
+@use "setting" as *;
+
+.p-cards {
+  display: grid;
+  gap: rem(3);
+  @include mq("md") {
+    gap: rem(42);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

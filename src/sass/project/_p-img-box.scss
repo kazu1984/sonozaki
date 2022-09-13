@@ -1,0 +1,54 @@
+@use "setting" as *;
+
+.p-img-box {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: rem(38);
+  @include mq("md") {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.p-img-box__inner {
+  position: relative;
+}
+
+.p-img-box__item:nth-child(1) {
+  @include mq("md") {
+    margin-top: rem(81);
+  }
+}
+
+.p-img-box__item:nth-child(2) {
+  @include mq("md") {
+    margin-top: rem(41);
+  }
+}
+
+.p-img-box__button {
+  position: absolute;
+  right: auto;
+  left: $padding-sp;
+  bottom: rem(11);
+  @include mq("md") {
+    left: auto;
+    right: rem(-3);
+    bottom: rem(-23);
+  }
+}
+
+.p-img-box__img {
+  background-color: black;
+}
+
+.p-img-box__img img {
+  aspect-ratio: 375 / 200;
+  object-fit: cover;
+  display: block;
+  opacity: .7;
+  @include mq("md") {
+    aspect-ratio: 312 / 240;
+    opacity: 1;
+  }
+}
+

@@ -1,0 +1,45 @@
+@use "setting" as *;
+
+html {
+  @media (max-width: 375px) {
+    font-size: vw(375, 16);
+  }
+
+  font-size: 16px;
+
+  @include mq("md") {
+    font-size: vw(strip-unit($inner), 16);
+  }
+
+  @media (min-width: $inner) {
+    font-size: 16px;
+  }
+}
+
+body {
+  font-family: $ff-main;
+  font-weight: $fw-main-regular;
+  color: $color-font-main;
+  background-color: $color-bg-main;
+}
+
+body.fixed {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* pcの電話番号発信対応 */
+a[href^="tel:"] {
+  @include mq("md") {
+    pointer-events: none;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  object-fit: cover;
+}

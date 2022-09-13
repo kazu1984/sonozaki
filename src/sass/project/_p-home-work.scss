@@ -1,0 +1,57 @@
+@use "setting" as *;
+
+.p-home-work {
+  background: linear-gradient(
+    -65deg,
+    $color-bg-grey 0%,
+    $color-bg-grey 12%,
+    $color-bg-main 12%,
+    $color-bg-main 88%,
+    $color-bg-grey 88%,
+    $color-bg-grey 100%
+  );
+  padding-bottom: rem(35);
+  @include mq("md") {
+    background: linear-gradient(
+      49deg,
+      $color-bg-grey 0%,
+      $color-bg-grey 17%,
+      $color-bg-main 17%,
+      $color-bg-main 83%,
+      $color-bg-grey 83%,
+      $color-bg-grey 100%
+    );
+    padding-bottom: 0;
+  }
+}
+
+.p-home-work__title {
+  padding-top: rem(31);
+  @include mq("md") {
+    padding-top: 0;
+    text-align: center;
+  }
+}
+
+.p-home-work__copy {
+  margin-top: rem(17);
+  @include mq("md") {
+    margin-top: rem(24);
+    text-align: center;
+  }
+}
+
+.p-home-work__cards {
+  margin: rem(36) calc(50% - 50vw) 0;
+  @include mq("md") {
+    margin: rem(50) rem(8) 0 rem(23);
+  }
+}
+
+.p-home-work__button {
+  text-align: center;
+  margin-top: rem(5);
+  @include mq("md") {
+    margin-top: rem(40);
+  }
+}

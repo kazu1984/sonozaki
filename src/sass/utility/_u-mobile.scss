@@ -1,0 +1,7 @@
+@use "setting" as *;
+
+.u-mobile {
+  @include mq("md") {
+    display: none;
+  }
+}

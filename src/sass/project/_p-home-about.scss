@@ -1,0 +1,54 @@
+@use "setting" as *;
+
+.p-home-about {
+  background-image: none;
+  @include mq("md") {
+    background-image: url("../images/common/background-image-about.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-top: rem(41);
+    padding-bottom: rem(41);
+  }
+}
+
+.p-home-about__inner {
+  background-color: $color-bg-main;
+  @include mq("md") {
+    max-width: rem(505);
+    padding: rem(6) rem(48) rem(46);
+  }
+}
+
+.p-home-about__img {
+  display: block;
+  @include mq("md") {
+    display: none;
+  }
+}
+
+.p-home-about__title {
+  margin-top: rem(40);
+}
+
+.p-home-about__button {
+  text-align: center;
+  margin-top: rem(29);
+  @include mq("md") {
+    margin-top: rem(39);
+    text-align: left;
+  }
+}
+
+.p-home-about__img-2 {
+  display: none;
+  @include mq("md") {
+    display: block;
+    aspect-ratio: 816 / 240;
+    margin-top: rem(32);
+  }
+  img {
+    height: 100%;
+  }
+}

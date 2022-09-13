@@ -1,0 +1,20 @@
+@use "sass:math";
+
+// インナー幅設定
+$inner: 1017px;
+
+// 余白
+$padding-pc: 25px;
+$padding-sp: 20px;
+
+// transition
+$transition: 0.3s;
+$transition-slow: 0.6s;
+
+// z-index
+$layer: (
+  header: 100,
+  header-menu: 50,
+  drawer: 30,
+  default: 1
+);

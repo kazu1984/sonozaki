@@ -1,0 +1,120 @@
+@use "setting" as *;
+
+.p-news {
+  display: flex;
+  align-items: center;
+  background-color: $color-bg-blue2;
+  padding: rem(2);
+  position: relative;
+  cursor: pointer;
+  @include mq("md") {
+    padding: rem(2) rem(40);
+  }
+}
+
+.p-news:hover .p-news__title {
+  text-decoration: underline;
+  
+}
+
+.p-news__head-wrap {
+  position: absolute;
+  left: 0;
+  top: rem(-20);
+  @include mq("md") {
+    position: static;
+  }
+}
+
+.p-news__head {
+  position: relative;
+  color: $color-font-second;
+  background-color: $color-bg-blue2;
+  font-size: rem(14);
+  font-family: $ff-second;
+  text-transform: uppercase;
+  padding: rem(1) rem(13);
+  @include mq("md") {
+    font-size: rem(16);
+    padding: 0;
+    background-color: transparent;
+  }
+}
+
+.p-news__head::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: rem(20) 0 0 rem(9);
+  border-color: transparent transparent transparent $color-bg-blue2;
+  top: 0;
+  left: 99.3%;
+}
+
+.p-news__body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  padding: rem(13) rem(6);
+  width: 100%;
+  z-index: 1;
+  @include mq("md") {
+    margin-left: rem(64);
+    padding: rem(15) rem(51);
+  }
+}
+
+.p-news__body::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-color: $color-bg-main;
+  @include mq("md") {
+    transform: skewX(-40deg);
+  }
+}
+
+.p-news__date {
+  font-size: rem(14);
+  @include mq("md") {
+    font-size: rem(16);
+  }
+}
+
+.p-news__tag {
+  font-size: rem(12);
+  color: $color-font-second;
+  background-color: $color-news-tag;
+  padding: rem(1) rem(8);
+  border-radius: 5px;
+  margin-left: rem(5);
+  @include mq("md") {
+    padding: 0.5em 1.2em;
+    margin-left: rem(25);
+  }
+}
+
+.p-news__title {
+  font-size: rem(14);
+  font-weight: $fw-main-regular;
+  margin-left: rem(9);
+  @include mq("md") {
+    font-size: rem(16);
+    margin-left: rem(25);
+  }
+}
+
+.p-news__arrow {
+  display: none;
+  @include mq("md") {
+    display: block;
+    margin-left: rem(26);
+  }
+}
